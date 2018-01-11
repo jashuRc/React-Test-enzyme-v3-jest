@@ -1,0 +1,8 @@
+{
+  "name": "React-Test-enzyme-v3-jest",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/jashuRc/React-Test-enzyme-v3-jest.git",
+  "author": "Jashu",
+  "license": "MIT"
+}
