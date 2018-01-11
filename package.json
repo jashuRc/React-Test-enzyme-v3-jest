@@ -5,8 +5,6 @@
   "scripts": {
     "build": "webpack",
     "start": "webpack-dev-server",
-    "compile": "browserify -t [ babelify --presets [ react es2015 ] ] src/app.js -o js/app.js",
-    "package": "electron-packager . DataBrowser --icon=icon.icns --out=./bin --overwrite",
     "test": "jest",
     "coverage": "jest --coverage",
     "clear-test-snapshots": "jest -u"
