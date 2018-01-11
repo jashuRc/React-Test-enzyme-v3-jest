@@ -1,7 +1,7 @@
 {
   "name": "React-Test-enzyme-v3-jest",
   "version": "0.0.1",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "build": "webpack",
     "start": "webpack-dev-server",
