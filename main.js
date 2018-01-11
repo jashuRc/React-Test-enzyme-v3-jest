@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import CheckboxWithLabel from './src/components/Checkbox/CheckboxWithLabel'
+import App from './src/App'
 
 ReactDOM.render(
-    <CheckboxWithLabel />
+    <App />
     ,document.getElementById('main')
 )

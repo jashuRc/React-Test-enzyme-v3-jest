@@ -7,10 +7,10 @@ import CheckboxWithLabel from '../CheckboxWithLabel';
 test('CheckboxWithLabel changes the text after click', () => {
     // Render a checkbox with label in the document
     const checkbox = shallow(
-        <CheckboxWithLabel labelOn="On" labelOff="Off" />
+        <CheckboxWithLabel labelOn="On" labelOff="Off" isChecked={true} />
     );
-
-    expect(checkbox.text()).toEqual('Off');
+    let checkbox_2 = checkbox.find({ type: 'checkbox' });
+    expect(checkbox_2.props().isChecked).toEqual(true);
 
     checkbox.find('input').simulate('change');
 
