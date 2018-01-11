@@ -35,8 +35,7 @@
   "jest": {
     "setupTestFrameworkScriptFile": "<rootDir>/jestSetup.js",
     "testPathIgnorePatterns": [
-      "/node_modules/",
-      "/bin/"
+      "/node_modules/"
     ],
     "collectCoverageFrom": [
       "src/**/*.{js,jsx}",
