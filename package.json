@@ -2,6 +2,50 @@
   "name": "React-Test-enzyme-v3-jest",
   "version": "0.0.1",
   "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server",
+    "compile": "browserify -t [ babelify --presets [ react es2015 ] ] src/app.js -o js/app.js",
+    "package": "electron-packager . DataBrowser --icon=icon.icns --out=./bin --overwrite",
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "clear-test-snapshots": "jest -u"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-jest": "latest",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "latest",
+    "babel-preset-react": "^6.24.1",
+    "babelify": "latest",
+    "browserify": "latest",
+    "enzyme": "latest",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "html-webpack-plugin": "^2.30.1",
+    "jest": "latest",
+    "react-addons-test-utils": "latest",
+    "react-test-renderer": "latest",
+    "regenerator-runtime": "latest",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.10.1"
+  },
+  "dependencies": {
+    "react": "latest",
+    "react-dom": "latest",
+    "react-loading": "latest"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "<rootDir>/jestSetup.js",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/bin/"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!**/node_modules/**"
+    ],
+    "coverageDirectory": "bin/coverage"
+  },
   "repository": "https://github.com/jashuRc/React-Test-enzyme-v3-jest.git",
   "author": "Jashu",
   "license": "MIT"
